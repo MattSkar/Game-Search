@@ -1,0 +1,247 @@
+[
+    {
+        "id": "appnetica",
+        "name": "Appnetica",
+        "search_url_template": "https://appnetica.com/search?term={query}",
+        "js_required": false,
+        "result_item_selector": "div.space-y-1 > div[tabindex=\"-1\"]:contains(\"Игры\") + div > a:first-of-type",
+        "title_from_item": { "selector": "div.font-medium", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "atopgames",
+        "name": "AtopGames",
+        "search_url_template": "https://atopgames.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.post-item:first-of-type h2.post-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "cggamespc",
+        "name": "CrackedGamesPC",
+        "search_url_template": "https://www.cg-gamespc.com/games?game={query}",
+        "js_required": false,
+        "result_item_selector": "div.card h3.card__title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "elenemigos",
+        "name": "ElEnemigos",
+        "search_url_template": "https://elenemigos.com/?g_name={query}",
+        "js_required": false,
+        "result_item_selector": "a.game-card",
+        "title_from_item": { "selector": "h2.text-xl", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "g4uto",
+        "name": "G4U",
+        "search_url_template": "https://g4u.to/en/search/?str={query}",
+        "js_required": false,
+        "result_item_selector": "a.mgame_bg",
+        "title_from_item": { "selector": "li.mtitel b", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gamdie",
+        "name": "Gamdie",
+        "search_url_template": "https://gamdie.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.gp-item:first-of-type h1.gp-post-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gamebounty",
+        "name": "GameBounty",
+        "search_url_template": "https://gamebounty.world/?s={query}",
+        "js_required": true,
+        "wait_for_selector": "a.block.h-full h3",
+        "result_item_selector": "a.block.h-full",
+        "title_from_item": { "selector": "h3", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gamepcfull",
+        "name": "GamePCFull",
+        "search_url_template": "https://gamepcfull.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "article.hentry:first-of-type h3.entry-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "games4uorg",
+        "name": "Games4U",
+        "search_url_template": "https://games4u.org/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.p-wrap.p-grid:first-of-type h3.entry-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gamesdrive",
+        "name": "Gamesdrive",
+        "search_url_template": "https://gamesdrive.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "article.hentry:first-of-type h2.entry-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gamespack",
+        "name": "GamesPack",
+        "search_url_template": "https://gamespack.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.col-md-12 div[class*=\"post-\"]:first-of-type div.title h3 a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "getfreegames",
+        "name": "GetFreeGames",
+        "search_url_template": "https://getfreegames.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.row-type:first-of-type h4.title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "gloadto",
+        "name": "GLOAD",
+        "search_url_template": "https://gload.to/search/{query}",
+        "js_required": false,
+        "result_item_selector": "article.uk-article a.titelcontenta",
+        "title_from_item": { "selector": "h2.gamemainansichttitel", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "goggames",
+        "name": "GOGgames",
+        "search_url_template": "https://gog-games.to/?search={query}",
+        "js_required": true,
+        "wait_for_selector": "div#app main section > div > a.card",
+        "result_item_selector": "a.card[href^='/game/']",
+        "title_from_item": { "selector": "div.info div.title span[title]", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "magipack",
+        "name": "MagipackGames",
+        "search_url_template": "https://www.magipack.games/?s={query}",
+        "js_required": false,
+        "result_item_selector": "article.hentry:first-of-type h2.entry-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "ovagames",
+        "name": "OVAgames",
+        "search_url_template": "https://www.ovagames.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.home-post-wrap:first-of-type div.home-post-titles > h2 > a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "pivigames",
+        "name": "PiviGames",
+        "search_url_template": "https://pivigames.blog/?s={query}",
+        "js_required": false,
+        "result_item_selector": "section.gp-post-item.gp-standard-post:first-of-type h2.gp-loop-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "reloadedsteam",
+        "name": "ReloadedSteam",
+        "search_url_template": "https://reloadedsteam.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.single-game:first-of-type a",
+        "title_from_item": { "selector": "img", "method": "alt" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "repacklab",
+        "name": "RepackLab",
+        "search_url_template": "https://repacklab.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.post-item.home-features-item:first-of-type h2.heading-title a.post-title",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "rexagames",
+        "name": "RexaGames",
+        "search_url_template": "https://rexagames.com/search/?q={query}&type=downloads_file&quick=1&search_and_or=or&search_in=titles&sortby=relevancy",
+        "js_required": false,
+        "result_item_selector": "li.ipsStreamItem_contentBlock:first-of-type div.ipsStreamItem__title h2 a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "steamcracked",
+        "name": "SteamCracked",
+        "search_url_template": "https://steam-cracked.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.gp-item:first-of-type h2.gp-post-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "steamgg",
+        "name": "SteamGG",
+        "search_url_template": "https://steamgg.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.blog-content.wcontainer.psearch-content:first-of-type h2 a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "steamrip",
+        "name": "SteamRIP",
+        "search_url_template": "https://steamrip.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "div.container-wrapper.post-element:first-of-type h2.thumb-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "steamunderground",
+        "name": "SteamUnderground",
+        "search_url_template": "https://steamunderground.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.row-type.content_out:first-of-type h4.title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "triahgames",
+        "name": "TriahGames",
+        "search_url_template": "https://triahgames.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "article.item.hentry:first-of-type h2.penci-entry-title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "undergroundgames",
+        "name": "UndergroundGames",
+        "search_url_template": "https://undergroundgames.net/?s={query}",
+        "js_required": false,
+        "result_item_selector": "li.item.col-md-12:first-of-type h4.title a",
+        "title_from_item": { "selector": null, "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    },
+    {
+        "id": "worldofpcgames",
+        "name": "WorldOfPCGames",
+        "search_url_template": "https://worldofpcgames.com/?s={query}",
+        "js_required": false,
+        "result_item_selector": "ul.modern-articles > li:first-of-type div.content-list a",
+        "title_from_item": { "selector": "h2", "method": "text" },
+        "link_from_item": { "selector": null, "method": "href" }
+    }
+]
