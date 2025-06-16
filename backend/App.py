@@ -232,5 +232,6 @@ async def search_api_stream():
 
 # --- Main Execution Block (for local testing) ---
 if __name__ == '__main__':
-    # Use port 5000 for the backend API
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Cloud Run provides the PORT environment variable
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port, debug=True)
