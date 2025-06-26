@@ -193,7 +193,7 @@ export default function App() {
       if (searchStatus === 'cached') return 'Streaming fast results from cache...';
       if (searchStatus === 'completed' && results.length > 0) return `Search complete. Found ${results.length} result${results.length !== 1 ? 's' : ''}.`;
       if (searchStatus === 'completed' && results.length === 0) return 'No results found for this query.';
-      return null; // Should not be reached, but good practice
+      return null;
   }
 
   return (
